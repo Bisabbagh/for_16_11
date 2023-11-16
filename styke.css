@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#d_form{
+
+    border-radius: 6px;
+    width: 80%;
+    height: 70vh;
+    justify-content: center;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+}
+form {
+
+    
+    width: 100%;
+
+    
+}
+label{
+    width: 20px;
+    color: rgb(0, 0, 0);
+    margin: 1%;
+    
+    padding: 1%;
+}
+input{
+    width: 120px;
+    margin: 1%;
+}
+.ginder{
+    margin: 0%;
+    padding: 0%;
+    width: 10px;
+}
+#description{
+    padding: 2%;
+    margin: 3%;
+}
+#desc{
+    margin-top: 40px;
+}
+#ppl{
+    width: 10px;
+    height: 20px;
+    margin: 0%;
+    padding: 0%;
+}

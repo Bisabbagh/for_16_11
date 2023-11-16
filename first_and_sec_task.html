@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styke.css">
+</head>
+<body>
+    <div id="d_form">
+        <form>
+            <label for="Name">Name :</label>
+            <input type="text" id="name">
+           
+            <label for="Age">Age :</label>
+            <input type="text" Age="name" id="age">
+            
+            <br>
+            <br>
+            <label id="m" for="M"> M</label>
+            <input type="radio" name="gg" id="M" class="ginder" value="M">
+            <label id="F_l" for="F"> F</label>
+            <input type="radio" name="gg" id="F" class="ginder" value="F">
+            <br>
+            
+            <label for="disc" id="desc">Brief describtion</label>
+            <br>
+
+            <textarea id="description" name="description" rows="4" required></textarea>
+            <br>
+            <label for="uni"> uni</label>
+            <input type="text" id="uni">
+            <br>
+
+            <label for="PL"> Program language:</label><br><br>
+
+            
+            <input type="checkbox" id="java" name="java" value="java" class="ppl">
+            <label class="PL">java</label>
+            <input type="checkbox" id="Python" name="Python" value="jPython" class="ppl">
+            <label class="PL">Python</label>
+            <input type="checkbox" id="Php" name="Php" value="Php" class="ppl">
+            <label class="PL">PHP</label>
+            <br>
+            <input type="submit" value="Sub" onclick="save()">
+
+
+            
+
+            
+        </form>
+    </div>
+    
+</body>
+<script>
+   /* function save() {
+            // Get values from the form
+            var name = document.getElementById('name').value;
+            var age = document.getElementById('age').value;
+            var desc=document.getElementById("description").value
+            var uni=document.getElementById("uni").value
+            var ginder=document.querySelector('input[name="gg"]:checked');
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var selectedOptions = Array.from(checkboxes).map(checkbox => checkbox.name);
+            
+
+            localStorage.setItem('name', name);
+            localStorage.setItem('age', age);
+
+            localStorage.setItem("description",desc)
+            localStorage.setItem('Uni', uni);
+            
+            if (ginder) {
+                
+                localStorage.setItem('ginder', ginder.value);
+            }
+            
+
+            if (checkboxes.length > 0) {
+                
+                localStorage.setItem('Program language', selectedOptions.join(','));
+            }
+
+            alert('Form data saved to local storage!');
+        }*/
+
+        function save() {
+            // Get values from the form
+            var name = document.getElementById('name').value;
+            var age = document.getElementById('age').value;
+            var desc=document.getElementById("description").value
+            var uni=document.getElementById("uni").value
+            var ginder=document.querySelector('input[name="gg"]:checked');
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var selectedOptions = Array.from(checkboxes).map(checkbox => checkbox.name);
+            
+
+            sessionStorage.setItem('name', name);
+            sessionStorage.setItem('age', age);
+
+            sessionStorage.setItem("description",desc)
+            sessionStorage.setItem('Uni', uni);
+            
+            if (ginder) {
+                
+                sessionStorage.setItem('ginder', ginder.value);
+            }
+            
+
+            if (checkboxes.length > 0) {
+                
+                sessionStorage.setItem('Program language', selectedOptions.join(','));
+            }
+            
+            alert('Form data saved to Session storage!');
+        }
+
+</script>
+</html>
